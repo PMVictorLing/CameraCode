@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/test_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="登录" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv_pay_bg"
+            android:layout_width="60px"
+            android:layout_height="99px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_boxrice_pay_green"/>
+        <ImageView
+            android:id="@+id/iv_heating_bg"
+            android:layout_width="60px"
+            android:layout_height="99px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_boxrice_heating_gray"
+            />
+        <ImageView
+            android:id="@+id/iv_shipping_bg"
+            android:layout_width="60px"
+            android:layout_height="99px"
+            android:background="@drawable/ic_boxrice_shipgray"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <com.ys.lwctestapp.tools.HorizontalProgressBarWithNumber
+            android:id="@+id/progressbar_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"/> />
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/check_scare"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:text="查询积分"
+        android:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <base href="<%=basePath%>">
+
+    <title>心电</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    <!--<script src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>-->
+    <!--<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>-->
+    <script type="text/javascript" src="file:///android_asset/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="file:///android_asset/js/highcharts.js"></script>
+    <script type="text/javascript">
+$(function(){
+    var data = myObj.getData();
+    var time = myObj.getTime();
+    dataHighchartXdDt(data,time);
+   })
+      //心电
+    function dataHighchartXdDt(dtxd,t){
+        //以下是绘制心电的逻辑
+        //省略
+        });
+    }
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="middlecenter-left-data-top" id="container"></div>
+<a href="http://www.baidu.com" style="font-size:30">This is baidu text!</a>
+</body>
+</html>
